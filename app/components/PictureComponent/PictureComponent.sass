@@ -1,0 +1,47 @@
+:local(.body)
+  font: 14px normal Arial, sans-serif
+  color: #626771
+  background-color: #fff
+  padding: 20px
+  text-align: center
+
+:local(.picture)
+  display: inline-block
+  margin: 5px
+  cursor: pointer
+  position: relative
+
+  &.favorite::after
+    content: '❤'
+    position: absolute
+    font-size: 30px
+    top: 10px
+    right: 20px
+    color: #FF224D
+    color: rgba(255, 34, 77, .3)
+    text-align: center
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .5)
+    font-weight: bold
+
+:local(.caption)
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  padding: 10px
+  max-height: 200px
+  background-color: rgba(0, 0, 0, .5)
+  color: white
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+:local(.username)
+
+:local(.likes)
+  &::before
+    content: '♥ '
+
+:local(.comments)
+  &::before
+    content: '☀ '
