@@ -1,0 +1,3 @@
+#!/bin/bash
+echo -e "\nRemoving node modules and bundled assets.."
+rm -Rf ./node_modules ./public

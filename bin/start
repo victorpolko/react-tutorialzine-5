@@ -1,0 +1,5 @@
+#!/bin/bash
+npm install && echo -e "NPM installed all modules to node_modules/ directory.\n"
+
+echo -e "\nStarting webpack-dev-server.."
+npm run dev
