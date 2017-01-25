@@ -59,6 +59,6 @@ ReactDOM.render(
 
 // Pictures from Instagram
 ReactDOM.render(
-  <PictureListComponent apiKey="642176ece1e7445e99244cec26f4de1f" />,
+  <PictureListComponent access_token="1115299896.6e85b50.cf4b621cd0d0469697ef6891762c1daf" />,
   document.getElementById('PictureListComponent')
 );

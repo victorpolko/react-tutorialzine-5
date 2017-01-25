@@ -15,7 +15,7 @@ export default React.createClass({
 
   loadPictures: function() {
     // API endpoint for Instagram's popular images for the day
-    let url = `https://api.instagram.com/v1/media/popular?client_id=${ this.props.apiKey }&callback=?`;
+    let url = `https://api.instagram.com/v1/tags/nofilter/media/recent?access_token=${ this.props.access_token }`;
 
     $.getJSON(url, (result) => {
       if (!result || !result.data || !result.data.length) {
